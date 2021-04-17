@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Baby Tracker</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                    <span id="home-link" class="nav-link">
+                        <h1>An Easy Way To Track Your Baby's Daily Actitivites</h1>
+                </div>
+                <div class="container">
+                    <li id="profile-link"><a href="#">Profile</a></li>
+                    <li id="login-link"><a href="#">Login</a></li>
+                    <li id="signup-link"><a href="#">Sign up</a></li>
+                    <li id="dashboard-link"><a href="#">Dashboard</a></li>
+                    <li id="logout-link"><a href="#">Logout</a></li>
+                </div>
+            </div>
+            <div class="user-name"></div>
+        </nav>
+    </header>
+
+    <section class="signup">
+        <form class="signup-form">
+            <div class="signup-input">
+             <div class="signup-top"><p>SIGNUP</p></div>
+             <input type="text" placeholder="Parent Name" id="signup-name">
+             <input type="email" placeholder="Email Address" id="signup-email">
+             <input type="password" placeholder="Password" id="signup-password">
+             <input type="text" placeholder="Baby's Name" id="signup-babyName">
+             <input type="text" placeholder="Birthday" id="signup-birthday">
+             <input type="text" placeholder="Gender" id="signup-gender">
+            </div>
+          <div class="signup-submit">
+            <input type="submit" value="SIGNUP">
+          </div>
+        </form>
+    </section>
+
+    <section class="login">
+        <form id="login-form">
+            <div class="login-input">
+                <div class="signup-top"><h1>LOGIN</h1></div>
+             <input type="text" placeholder="Email Address" id="login-email">
+             <input type="password" placeholder="Password" id="login-password">
+            </div>
+
+            <div class="login-submit">
+              <div class="login-button">
+                  <input type="submit" value="LOGIN">
+              </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="dashboard">
+        <div class="searchBar-container">
+            <form id="babyTracker-form">
+                <h2>SEARCH YOUR BABY'S DATA</h2>
+                <input type="text" id="babyData" placeholder="Search by Date">
+                <input id="babyTracker-searchButton" type="submit" value="SEARCH">
+            </form>
+            <div class="searchbar-bottom">
+            <h2 id="babyData-info">Baby Data</h2>
+            <h2>Your data has been saved</h2>
+           </div>
+        </div>
+
+        <div class="search-result-container">
+            <div class="search-result">
+            <h4 id="result-date"></h4>
+            <button class="saveSearch">SAVE</button>
+        </div>
+
+            <div class="saved-item">
+            </div>
+        </div>
+        <div class="save-container">
+        </div>
+
+    </section>
+
+    <section class="profile">
+        <div class="signup-top"><h1>PROFILE</h1></div>
+        <form class="user-info-form">
+            <div class="user-info-input">
+                <input type="text" id="edit-name" placeholder="name">
+                <input type="email" id="edit-email" placeholder="email">
+                <input type="password" id="edit-password" placeholder="">
+                <input type="text" id="edit-babyName">
+                <input type="text" id="edit-birthday">
+                <input type="text" id="edit-gender">
+            </div>
+            <div class="edit-submit">
+               <input type="submit" value="Edit Profile">
+               <button class="deleteProfile"> Delete account</button>
+            </div>
+
+    </section>
+    <script async defer src="/main.js"></script>
+</body>
+</html>

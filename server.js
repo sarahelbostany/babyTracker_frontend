@@ -2,13 +2,12 @@ const express = require('express')
 const app = express()
 
 const routesReport = require('rowdy-logger').begin(app)
-const replaceInFile = require('replace-in-file')
 
 const path = require('path')
 const { kMaxLength } = require('buffer')
 
 app.get('/', (req, res) => {
-  const filepath = path.join(__dirname, 'index.html')
+  const filepath = path.join(__dirname, "index.html")
   res.sendFile(filepath)
 })
 
@@ -37,4 +36,3 @@ app.listen(port, () => {
     routesReport.print()
 })
 //test
-
